@@ -57,7 +57,7 @@ namespace Backend.Controllers
                     calculation.Result = calculation.Number1 / calculation.Number2;
                     break;
                 case "%":
-                    calculation.Result = calculation.Number1 % calculation.Number2;
+                    calculation.Result = Math.Round(((calculation.Number2 / 100)*calculation.Number1),2);
                     break;
             }
 
